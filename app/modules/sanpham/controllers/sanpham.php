@@ -1614,7 +1614,8 @@ class sanpham extends Controller
     {
         $id=$_POST['id'];
         $soluong=$_POST['soluong'];
-		$kichthuoc=explode("_",$id)['1'];
+		$idArr=explode("_",$id);
+		$kichthuoc=$idArr['1'];
         if(isset($_SESSION['sanpham']))
         {
             if($_SESSION['sanpham']!='')
@@ -1988,7 +1989,8 @@ class sanpham extends Controller
                                 $item=explode("-",$row);
                                 {
 									$spId = $item['0'];
-									$kichthuoc=explode("_",$spId)['1'];
+									$idArr=explode("_",$spId);
+									$kichthuoc=$idArr['1'];
                                     $this->db->where('id',$item['0']);
                                     $sanpham=$this->db->get('tblsanpham')->row();
                                 $noidungdonhang=$noidungdonhang.'<tr class="item_or" >

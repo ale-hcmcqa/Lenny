@@ -313,7 +313,8 @@
 											$item=explode("-",$row);
 											{
 												$spId = $item['0'];
-												$kichthuoc=explode("_",$spId)['1'];
+												$idArr=explode("_",$spId);
+												$kichthuoc=$idArr['1'];
 												$this->db->where('id',$item['0']);
 												$sp=$this->db->get('tblsanpham')->row();
 												?>

@@ -87,7 +87,8 @@
 						$item=explode("-",$row);
 						{
 							$spId = $item['0'];
-							$kichthuoc=explode("_",$spId)['1'];
+							$idArr=explode("_",$spId);
+							$kichthuoc=$idArr['1'];
 							$this->db->where('id',$item['0']);
 							$sp=$this->db->get('tblsanpham')->row();
 							?>
@@ -182,7 +183,7 @@
                          success:function(html){
                           $("#tr_<?PHP echo $spId.$dem?>").hide();
                           $("#list_order").html(html);
-                            window.location.reload();
+                          window.location.reload();
                          }
                         });
                         }
