@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+Disallow: /ckeditor/
+Disallow: /ckfinder/
+Disallow: /system/
+Disallow: /application/modules/hpbackend

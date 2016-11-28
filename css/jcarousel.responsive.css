@@ -1,0 +1,451 @@
+.jcarousel-wrapper {
+    margin:10px auto;
+    position: relative;    
+}
+
+/** Carousel **/
+.jcarousela2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jcarousela2 ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousela2 li {
+    float: left;
+    text-align: center;         
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jcarousela2 img {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    margin:auto; 
+    height:35px;  
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-preva2,
+.jcarousel-control-nexta2 {
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    width:20px;
+    height:20px;
+}
+
+.jcarousel-control-preva2 {
+    left:-30px;
+}
+
+.jcarousel-control-nexta2 {
+    right:-30px;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-paginationa2 {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+}
+
+.jcarousel-paginationa2 a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 7px;
+
+
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+}
+
+.jcarousel-paginationa2 a.active {
+    background: #a1a1a1;
+    color: #fff;
+    opacity: 1;
+
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
+}
+/** Carousel **/
+
+.jcarousela {
+    position: relative;
+    overflow: hidden;    
+    width: 100%;
+}
+
+.jcarousela ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousela li {
+    float: left;        
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jcarousela img {
+    display: block;
+    text-align: center;
+    max-width: 100%;   
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-preva,
+.jcarousel-control-nexta {
+    position: absolute;
+    top:-57px;    
+    width:20px;
+    height:20px;
+}
+
+.jcarousel-control-preva {
+    right:55px;
+}
+
+.jcarousel-control-nexta {
+    right:15px;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-paginationa {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+}
+
+.jcarousel-paginationa a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 7px;
+
+
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+}
+
+.jcarousel-paginationa a.active {
+    background: #a1a1a1;
+    color: #fff;
+    opacity: 1;
+
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
+}
+/** Carousel **/
+
+.jcarousel1 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jcarousel1 ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel1 li {
+    float: left;        
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jcarousel1 img {
+    display: block;
+    text-align: center;
+    max-width: 100%;    
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev1,
+.jcarousel-control-next1 {
+    position: absolute;
+    top:-57px;    
+    width:20px;
+    height:20px;
+}
+
+.jcarousel-control-prev1 {
+    right:55px;
+}
+
+.jcarousel-control-next1 {
+    right: 15px;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination1 {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+}
+
+.jcarousel-pagination1 a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 7px;
+
+
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+}
+
+.jcarousel-pagination1 a.active {
+    background: #a1a1a1;
+    color: #fff;
+    opacity: 1;
+
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
+}
+/** Carousel **/
+
+.jcarousel2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jcarousel2 ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel2 li {    
+    float: left;        
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/** Carousel Controls **/
+
+.jcarousel-control-prev2,
+.jcarousel-control-next2 {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width:20px;
+    height:20px;
+}
+
+.jcarousel-control-prev2 {
+    left: 10px;
+}
+
+.jcarousel-control-next2 {
+    right: 10px;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination2 {
+    position: absolute;
+    bottom:0px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+}
+
+.jcarousel-pagination2 a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 7px;
+
+
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+}
+
+.jcarousel-pagination2 a.active {
+    background: #a1a1a1;
+    color: #fff;
+    opacity: 1;
+
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
+}
+/** Carousel **/
+.jcarousela3 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jcarousela3 ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousela3 li {
+    float: left;        
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jcarousela3 img {
+    display: block;
+    text-align: center;
+    max-width: 100%;   
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-preva3,
+.jcarousel-control-nexta3 {
+    position: absolute;
+    top:-57px;    
+    width:20px;
+    height:20px;
+}
+
+.jcarousel-control-preva3 {
+    right:55px;
+}
+
+.jcarousel-control-nexta3 {
+    right: 15px;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-paginationa3 {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+}
+
+.jcarousel-paginationa3 a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 7px;
+
+
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+}
+
+.jcarousel-paginationa3 a.active {
+    background: #a1a1a1;
+    color: #fff;
+    opacity: 1;
+
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
+}

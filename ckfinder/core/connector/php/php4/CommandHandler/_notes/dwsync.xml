@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CommandHandlerBase.php" server="D:/xampp/htdocs/chicland/" local="129482565940000000" remote="129482565940000000" />
+<file name="CopyFiles.php" server="D:/xampp/htdocs/chicland/" local="129482565940000000" remote="129482565940000000" />
+<file name="CreateFolder.php" server="D:/xampp/htdocs/chicland/" local="129482565960000000" remote="129482565960000000" />
+<file name="DeleteFile.php" server="D:/xampp/htdocs/chicland/" local="129482565960000000" remote="129482565960000000" />
+<file name="DeleteFolder.php" server="D:/xampp/htdocs/chicland/" local="129482565960000000" remote="129482565960000000" />
+<file name="DownloadFile.php" server="D:/xampp/htdocs/chicland/" local="129482565960000000" remote="129482565960000000" />
+<file name="FileUpload.php" server="D:/xampp/htdocs/chicland/" local="129482565960000000" remote="129482565960000000" />
+<file name="GetFiles.php" server="D:/xampp/htdocs/chicland/" local="129482565960000000" remote="129482565960000000" />
+<file name="GetFolders.php" server="D:/xampp/htdocs/chicland/" local="129482565960000000" remote="129482565960000000" />
+<file name="Init.php" server="D:/xampp/htdocs/chicland/" local="129482565960000000" remote="129482565960000000" />
+<file name="MoveFiles.php" server="D:/xampp/htdocs/chicland/" local="129482565980000000" remote="129482565980000000" />
+<file name="QuickUpload.php" server="D:/xampp/htdocs/chicland/" local="129482565960000000" remote="129482565960000000" />
+<file name="RenameFile.php" server="D:/xampp/htdocs/chicland/" local="129482565980000000" remote="129482565980000000" />
+<file name="RenameFolder.php" server="D:/xampp/htdocs/chicland/" local="129482565980000000" remote="129482565980000000" />
+<file name="Thumbnail.php" server="D:/xampp/htdocs/chicland/" local="129482565980000000" remote="129482565980000000" />
+<file name="XmlCommandHandlerBase.php" server="D:/xampp/htdocs/chicland/" local="129482565980000000" remote="129482565980000000" />
+</dwsync>
