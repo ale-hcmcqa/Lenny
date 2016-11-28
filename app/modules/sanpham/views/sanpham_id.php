@@ -146,13 +146,13 @@
                                    jQuery("#dathangnao").click(function(){
                                     var soluong =$('#soluong').val();
 									var kichthuoc =$('#kichthuoc').val();								
-                                    var id =$('#idpro').val() + kichthuoc;								
+                                    var id =$('#idpro').val() + '_' + kichthuoc;								
                                     if (!CheckNumber())
                                             return;
                                     jQuery.ajax({
                                      cache: false,
                                      type:"POST",
-                                    data:{soluong : soluong,id : id,kichthuoc: kichthuoc},
+                                    data:{soluong : soluong,id : id},
                                      url:"<?php echo site_url('sanpham/addorder_pro/');?>",
                                      success:function(html){
                                       alert('Sản phẩm đã được thêm vào giỏ hàng');
@@ -162,7 +162,22 @@
                                    });
 								   
                                   });
-
+							      jQuery(document).ready(function(){
+                                   jQuery("#muangay").click(function(){
+                                    var soluong =$('#soluong').val();
+									var kichthuoc =$('#kichthuoc').val();								
+                                    var id =$('#idpro').val() + '_' + kichthuoc;								
+                                    if (!CheckNumber())
+                                            return;
+                                    jQuery.ajax({
+                                     cache: false,
+                                     type:"POST",
+                                    data:{soluong : soluong,id : id},
+                                     url:"<?php echo site_url('sanpham/addorder_pro/');?>",                                     
+                                    });
+                                   });
+								   
+                                  });
                                  </script>
                                 <div class="clearfix"></div>
                             </div>                                                                                                                                                                                                                                                                                                                                                

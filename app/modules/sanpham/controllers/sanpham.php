@@ -1614,7 +1614,7 @@ class sanpham extends Controller
     {
         $id=$_POST['id'];
         $soluong=$_POST['soluong'];
-		$kichthuoc=$_POST['kichthuoc'];
+		$kichthuoc=explode("_",$id)['1'];
         if(isset($_SESSION['sanpham']))
         {
             if($_SESSION['sanpham']!='')
@@ -1973,6 +1973,7 @@ class sanpham extends Controller
                               <td style="border:1px solid #ccc;padding:5px;"><b>Ảnh</b></td>
                               <td style="border:1px solid #ccc;padding:5px;"><b>Giá</b></td>
                               <td style="border:1px solid #ccc;padding:5px;"><b>Số lượng</b></td>
+							  <td style="border:1px solid #ccc;padding:5px;"><b>Kích thước</b></td>
                               <td style="border:1px solid #ccc;padding:5px;"><b>Thành tiền</b></td>
                             </tr>';
                               $str=$_SESSION['sanpham'];
@@ -1986,12 +1987,14 @@ class sanpham extends Controller
                             {
                                 $item=explode("-",$row);
                                 {
+									$spId = $item['0'];
+									$kichthuoc=explode("_",$spId)['1'];
                                     $this->db->where('id',$item['0']);
                                     $sanpham=$this->db->get('tblsanpham')->row();
                                 $noidungdonhang=$noidungdonhang.'<tr class="item_or" >
                                   <td style="font-size:13px;border:1px solid #ccc;padding:5px;">'.$dem.'</td>
                                   <td style="text-align:left;font-size:13px;border:1px solid #ccc;padding:5px;"><b>'.$sanpham->ten.'</b></td>
-                                  <td class="lightbox" style="border:1px solid #ccc;padding:5px;"><img src="'.site_url().$sanpham->anh_thumb.'" width="200"/></td>
+                                  <td class="lightbox" style="border:1px solid #ccc;padding:5px;"><img src="'.site_url().$sanpham->anh.'" width="200"/></td>
                                   <td style="text-align:right;border:1px solid #ccc;padding:5px;">';
                                   if($sanpham->giakm!=0)
                                   {
@@ -2014,7 +2017,8 @@ class sanpham extends Controller
                                       }
                                   }
                                   $noidungdonhang=$noidungdonhang.'</td>
-                                  <td class="lightbox" style="border:1px solid #ccc;padding:5px;">'.$item['1'].'</td>';
+                                  <td class="lightbox" style="border:1px solid #ccc;padding:5px;">'.$item['1'].'</td>;
+								  <td class="lightbox" style="border:1px solid #ccc;padding:5px;">'.$kichthuoc.'</td>';
                                   if($sanpham->giakm!=0)
                                   {
                                     $tong=($item['1'])*($sanpham->giakm);

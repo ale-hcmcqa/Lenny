@@ -12,6 +12,8 @@
 
                       <td class="">Số lượng</td>
 
+					  <td class="">Kích thước</td>
+					  
                       <td class="">Thành tiền</td>
 
                       <td class="">Xóa</td>
@@ -30,14 +32,16 @@
                     {
                         $item=explode("-",$row);
                         {
+							$spId = $item['0'];
+							$kichthuoc=explode("_",$spId)['1'];
                             $this->db->where('id',$item['0']);
                             $sp=$this->db->get('tblsanpham')->row();
                             ?>
                         
-                       <tr class="item_or" id="tr_<?php echo $sp->id.$dem?>">    
+                       <tr class="item_or" id="tr_<?php echo $spId.$dem?>">    
                           <td class=""><?php echo $dem;?></td>
                           <td class=""><b><?php echo $sp->ten;?></b></td>
-                          <td class="lightbox" style="text-align:center;"><a href="<?php echo $sp->anh;?>"><img src="<?php echo $sp->anh_thumb;?>" width="120" style="text-align: center;"/></a></td>
+                          <td class="lightbox" style="text-align:center;"><a href="<?php echo $sp->anh;?>"><img src="<?php echo $sp->anh;?>" width="120" style="text-align: center;"/></a></td>
                           <td class=""><?php
                             if($sp->giakm!=0)
                             { 
@@ -58,9 +62,9 @@
                             }                                                                                                                                                    
                            ?></td>
                           <td class=""><br />
-                            <input style="width:30px;text-align:center;" type="text" name="soluong<?php echo $sp->id ?>" id="soluong<?php echo $sp->id; ?>" value="<?php echo $item['1']; ?>" />                                
+                            <input style="width:30px;text-align:center;" type="text" name="soluong<?php echo $spId ?>" id="soluong<?php echo $spId; ?>" value="<?php echo $item['1']; ?>" />                                
                           </td>
-
+						  <td class=""><?php echo $kichthuoc;?></td>
                           <td class="">
                           <?php
                             if($sp->giakm!=0)
@@ -90,19 +94,19 @@
                              }                                                  
                           ?>
                           </td>
-                          <td class=""><a id="delete_order<?PHP echo $sp->id.$dem?>" class="delete_order" title="Xóa sản phẩm" style="cursor:pointer;"><img src="images/1335283990_button_cancel.png" width="20" border="0" /></a></td>
+                          <td class=""><a id="delete_order<?PHP echo $spId.$dem?>" class="delete_order" title="Xóa sản phẩm" style="cursor:pointer;"><img src="images/1335283990_button_cancel.png" width="20" border="0" /></a></td>
                         </tr>
                         <?PHP
                         }?>
                         <script type="text/javascript">
                       jQuery(document).ready(function(){
-                       jQuery("#soluong<?PHP echo $sp->id;?>").change(function(){
-                                                         var soluong = $("#soluong<?PHP echo $sp->id;?>").val();
+                       jQuery("#soluong<?PHP echo $spId;?>").change(function(){
+                        var soluong = $("#soluong<?PHP echo $spId;?>").val();
                         jQuery.ajax({
                          cache: false,
                          type:"POST",
                          data:{soluong : soluong},
-                         url:"<?PHP echo site_url('sanpham/addnum/'.$sp->id);?>",
+                         url:"<?PHP echo site_url('sanpham/addnum/'.$spId);?>",
                          success:function(html){
                          $("#list_order").html(html);                         
                          }
@@ -110,9 +114,9 @@
                        });
                       });
                      </script>
-                        <script type="text/javascript">
+                     <script type="text/javascript">
                       jQuery(document).ready(function(){
-                       jQuery("#delete_order<?PHP echo $sp->id.$dem?>").click(function(){
+                       jQuery("#delete_order<?PHP echo $spId.$dem?>").click(function(){
                         r = confirm("Bạn có thật sự muốn xóa?");    
                         if(r == false) return false;
                         else
@@ -122,11 +126,11 @@
                          type:"POST",
                          url:"<?PHP echo site_url('sanpham/delete_order/'.$row);?>",
                          success:function(html){
-                          $("#tr_<?PHP echo $sp->id.$dem?>").hide();
+                          $("#tr_<?PHP echo $spId.$dem?>").hide();
                           $("#list_order").html(html);
                             window.location.reload();
-                                         }
-                                        });
+                         }
+                        });
                         }
                        });
                       });

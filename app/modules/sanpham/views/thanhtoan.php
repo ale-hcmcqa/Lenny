@@ -294,9 +294,8 @@
 					
 										  <td>Sản phẩm</td>
 										  <td>Giá</td>
-					
-										  <td>Số lượng</td>
-					
+										  <td>Số lượng</td>	
+										  <td>Kích thước</td>			
 										  <td>Tổng</td>
 					
 										</tr>
@@ -313,6 +312,8 @@
 										{
 											$item=explode("-",$row);
 											{
+												$spId = $item['0'];
+												$kichthuoc=explode("_",$spId)['1'];
 												$this->db->where('id',$item['0']);
 												$sp=$this->db->get('tblsanpham')->row();
 												?>
@@ -340,7 +341,7 @@
                            ?>								
 											  </td>
 											  <td><?PHP echo $item['1']?></td>
-					
+											  <td><?PHP echo $kichthuoc;?></td>
 											  <td style="text-align:right">
 											  	<?php
 											  	if($sp->giakm!=0)
