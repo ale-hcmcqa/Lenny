@@ -124,6 +124,8 @@
 								  <option value="S">S</option>
 								  <option value="M" selected="selected">M</option >
 								  <option value="L">L</option>
+								  <option value="XL">XL</option>
+								  <option value="XXL">XXL</option>
 								</select>
 								<a style="cursor: pointer; background:#f51b1b !important;" id="muangay" href="<?php echo site_url('sanpham/thanhtoan'); ?>" class="btnr" title="<?php echo $rows->ten; ?>"><font color="white">Mua ngay</font></a>
 								<a style="cursor: pointer;" id="dathangnao" class="btnr" title="<?php echo $rows->ten; ?>">Thêm vào giỏ hàng</a>
