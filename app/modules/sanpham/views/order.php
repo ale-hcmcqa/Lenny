@@ -183,7 +183,6 @@
                          success:function(html){
                           $("#tr_<?PHP echo $spId.$dem?>").hide();
                           $("#list_order").html(html);
-                          window.location.reload();
                          }
                         });
                         }

@@ -129,7 +129,6 @@
                          success:function(html){
                           $("#tr_<?PHP echo $spId.$dem?>").hide();
                           $("#list_order").html(html);
-                            window.location.reload();
                          }
                         });
                         }
@@ -155,7 +154,7 @@
                   <tr>
                     <td>
                         <div id="tieptuc">
-                            <a href="<?php echo base_url(); ?>" class="nut">Tiếp tực mưa hàng</a>
+                            <a href="<?php echo base_url(); ?>" class="nut">Tiếp tục mua hàng</a>
                             <a style="background:#f51b1b !important;" href="<?php echo site_url('sanpham/thanhtoan'); ?>" class="nut">Thanh toán</a>
                         </div>
                     </td>

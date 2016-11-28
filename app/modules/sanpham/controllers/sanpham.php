@@ -1874,9 +1874,9 @@ class sanpham extends Controller
 		   $_SESSION['sanpham']=$chuoi;
 		}
         $html=$this->load->view('addnum');
-        //echo $html;
-		alert(html);
-		window.location.reload();
+        echo $html;
+		//alert(html);
+		//window.location.reload();
     }  
     function addnum1($id)
     {
