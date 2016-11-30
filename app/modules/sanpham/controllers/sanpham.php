@@ -1632,11 +1632,11 @@ class sanpham extends Controller
                         {
                             $sl=$item['1']+$soluong;
                             $true=1;
-                            $con=$item['0'].'-'.$sl.'-'.$item['2'];;
+                            $con=$item['0'].'-'.$sl.'-';
                         }
                         else
                         {
-                            $con=$item['0'].'-'.$item['1'].'-'.$item['2'];
+                            $con=$item['0'].'-'.$item['1'].'-';
                         }
                     }
                         if($dem==1)
@@ -1875,6 +1875,7 @@ class sanpham extends Controller
 		}
         $html=$this->load->view('addnum');
         echo $html;
+		
 		//alert(html);
 		//window.location.reload();
     }  
@@ -1890,7 +1891,7 @@ class sanpham extends Controller
               $item=explode("-",$row);
               if($item['0']==$id)
               {
-                    $row=$item['0'].'-'.$soluong.'-'.$item['2'];
+                    $row=$item['0'].'-'.$soluong.'-';
               }
               if($dem==1)
               {
