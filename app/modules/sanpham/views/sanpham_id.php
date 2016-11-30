@@ -118,7 +118,11 @@
 								<div id="labelquantityinput">Số lượng</div>
                                 <input type="text" name="soluong" id="soluong" value="1" />
 								<div id="labelcolorinput">Màu sắc</div>
-                                <input type="text" name="mausac" id="mausac" value="Đen" />
+								<select id="mausac">
+								  <option value="black">Đen</option>
+								  <option value="white" selected="selected">Trắng</option >
+								  <option value="yellow">Vàng</option>								  
+								</select>
 								<div id="labelsizeinput">Kích thước</div>
 								<select id="kichthuoc">
 								  <option value="S">S</option>
@@ -147,8 +151,9 @@
                                   jQuery(document).ready(function(){
                                    jQuery("#dathangnao").click(function(){
                                     var soluong =$('#soluong').val();
-									var kichthuoc =$('#kichthuoc').val();								
-                                    var id =$('#idpro').val() + '_' + kichthuoc;								
+									var kichthuoc =$('#kichthuoc').val();
+									var mausac =$('#mausac option:selected').text();
+                                    var id =$('#idpro').val() + '_' + kichthuoc + '_' + mausac;								
                                     if (!CheckNumber())
                                             return;
                                     jQuery.ajax({

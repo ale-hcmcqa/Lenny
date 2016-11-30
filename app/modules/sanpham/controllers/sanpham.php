@@ -1616,6 +1616,7 @@ class sanpham extends Controller
         $soluong=$_POST['soluong'];
 		$idArr=explode("_",$id);
 		$kichthuoc=$idArr['1'];
+		$mausac=$idArr['2'];
         if(isset($_SESSION['sanpham']))
         {
             if($_SESSION['sanpham']!='')
@@ -1655,7 +1656,7 @@ class sanpham extends Controller
                 }
                 else
                 {
-                    $order=$id.'-'.$soluong.'-'.$kichthuoc;
+                    $order=$id.'-'.$soluong.'-'.$kichthuoc.'-'.$mausac;
                     $order=$_SESSION['sanpham'].','.$order;
                     $_SESSION['sanpham']=$order;
                 }
@@ -1663,14 +1664,14 @@ class sanpham extends Controller
                 else
                 {
                     
-                    $order=$id.'-'.$soluong.'-'.$kichthuoc;
+                    $order=$id.'-'.$soluong.'-'.$kichthuoc.'-'.$mausac;
                     $_SESSION['sanpham']=$order;
                     
                 }
         }
         else
         {
-            $order=$id.'-'.$soluong.'-'.$kichthuoc;
+            $order=$id.'-'.$soluong.'-'.$kichthuoc.'-'.$mausac;
             $_SESSION['sanpham']=$order;
         }
         $str=$_SESSION['sanpham'];
@@ -1975,6 +1976,7 @@ class sanpham extends Controller
                               <td style="border:1px solid #ccc;padding:5px;"><b>Ảnh</b></td>
                               <td style="border:1px solid #ccc;padding:5px;"><b>Giá</b></td>
                               <td style="border:1px solid #ccc;padding:5px;"><b>Số lượng</b></td>
+							  <td style="border:1px solid #ccc;padding:5px;"><b>Màu sắc</b></td>
 							  <td style="border:1px solid #ccc;padding:5px;"><b>Kích thước</b></td>
                               <td style="border:1px solid #ccc;padding:5px;"><b>Thành tiền</b></td>
                             </tr>';
@@ -1992,6 +1994,7 @@ class sanpham extends Controller
 									$spId = $item['0'];
 									$idArr=explode("_",$spId);
 									$kichthuoc=$idArr['1'];
+									$mausac=$idArr['2'];
                                     $this->db->where('id',$item['0']);
                                     $sanpham=$this->db->get('tblsanpham')->row();
                                 $noidungdonhang=$noidungdonhang.'<tr class="item_or" >
@@ -2021,7 +2024,9 @@ class sanpham extends Controller
                                   }
                                   $noidungdonhang=$noidungdonhang.'</td>
                                   <td class="lightbox" style="border:1px solid #ccc;padding:5px;">'.$item['1'].'</td>;
+								  <td class="lightbox" style="border:1px solid #ccc;padding:5px;">'.$mausac.'</td>;
 								  <td class="lightbox" style="border:1px solid #ccc;padding:5px;">'.$kichthuoc.'</td>';
+								  
                                   if($sanpham->giakm!=0)
                                   {
                                     $tong=($item['1'])*($sanpham->giakm);

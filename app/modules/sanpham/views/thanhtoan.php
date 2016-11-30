@@ -295,6 +295,7 @@
 										  <td>Sản phẩm</td>
 										  <td>Giá</td>
 										  <td>Số lượng</td>	
+										  <td>Màu sắc</td>
 										  <td>Kích thước</td>			
 										  <td>Tổng</td>
 					
@@ -315,6 +316,7 @@
 												$spId = $item['0'];
 												$idArr=explode("_",$spId);
 												$kichthuoc=$idArr['1'];
+												$mausac=$idArr['2'];
 												$this->db->where('id',$item['0']);
 												$sp=$this->db->get('tblsanpham')->row();
 												?>
@@ -342,6 +344,7 @@
                            ?>								
 											  </td>
 											  <td><?PHP echo $item['1']?></td>
+											  <td><?PHP echo $mausac;?></td>
 											  <td><?PHP echo $kichthuoc;?></td>
 											  <td style="text-align:right">
 											  	<?php

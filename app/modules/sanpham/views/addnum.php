@@ -12,6 +12,8 @@
 
                       <td class="">Số lượng</td>
 
+					  <td class="">Màu sắc</td>
+					  
 					  <td class="">Kích thước</td>
 					  
                       <td class="">Thành tiền</td>
@@ -35,6 +37,7 @@
 							$spId = $item['0'];
 							$idArr=explode("_",$spId);
 							$kichthuoc=$idArr['1'];
+							$mausac=$idArr['2'];
                             $this->db->where('id',$item['0']);
                             $sp=$this->db->get('tblsanpham')->row();
                             ?>
@@ -65,6 +68,7 @@
                           <td class=""><br />
                             <input style="width:30px;text-align:center;" type="text" name="soluong<?php echo $spId ?>" id="soluong<?php echo $spId; ?>" value="<?php echo $item['1']; ?>" />                                
                           </td>
+						  <td class=""><?php echo $mausac;?></td>
 						  <td class=""><?php echo $kichthuoc;?></td>
                           <td class="">
                           <?php
