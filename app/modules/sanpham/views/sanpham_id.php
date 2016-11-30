@@ -127,7 +127,7 @@
 								  <option value="XL">XL</option>
 								  <option value="XXL">XXL</option>
 								</select>
-								<a style="cursor: pointer; background:#f51b1b !important;" id="muangay" href="<?php echo site_url('sanpham/thanhtoan'); ?>" class="btnr" title="<?php echo $rows->ten; ?>"><font color="white">Mua ngay</font></a>
+								<a style="cursor: pointer; background:#f51b1b !important;" id="muangay" class="btnr" title="<?php echo $rows->ten; ?>"><font color="white">Mua ngay</font></a>
 								<a style="cursor: pointer;" id="dathangnao" class="btnr" title="<?php echo $rows->ten; ?>">Thêm vào giỏ hàng</a>
                                 <input type="hidden" value="<?php echo $rows->id;?>" id="idpro" name="order_name"/>
                                 <script type="text/javascript">
@@ -175,7 +175,10 @@
                                      cache: false,
                                      type:"POST",
                                     data:{soluong : soluong,id : id},
-                                     url:"<?php echo site_url('sanpham/addorder_pro/');?>",                                     
+                                     url:"<?php echo site_url('sanpham/addorder_pro/');?>",
+									 success:function(html){
+                                        window.location.href = 'sanpham/thanhtoan/';
+                                     }
                                     });
                                    });
 								   
