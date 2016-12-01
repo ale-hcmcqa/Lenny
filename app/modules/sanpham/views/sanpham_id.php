@@ -117,8 +117,6 @@
 							<div id="dathang_con_ct">
 								<div id="labelquantityinput">Số lượng</div>
                                 <input type="text" name="soluong" id="soluong" value="1" />
-								<div id="labelcolorinput">Màu sắc</div>
-                                <input type="text" name="mausac" id="mausac" value="Đen" />
 								<div id="labelsizeinput">Kích thước</div>
 								<select id="kichthuoc">
 								  <option value="S">S</option>
