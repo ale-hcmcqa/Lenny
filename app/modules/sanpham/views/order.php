@@ -96,8 +96,8 @@
                        <tr class="item_or" id="tr_<?php echo $spId.$dem?>">    
                           <td class=""><?php echo $dem;?></td>
                           <td class=""><b><?php echo $sp->ten;?></b></td>
-                          <td class="lightbox" style="text-align:center;"><a href="<?php echo $sp->anh;?>"><img src="<?php echo $sp->anh;?>" width="120" style="text-align: center;"/></a></td>
-                          <td class=""><?php
+                          <td class="lightbox" style="text-align:center;"><a href="<?php echo $sp->anh;?>"><img src="<?php echo $sp->anh_thumb;?>" width="120" style="text-align: center;"/></a></td>
+                         <td class=""><?php
                           	if($sp->giakm!=0)
                           	{ 
                           		echo number_format($sp->giakm,0,'.','.');

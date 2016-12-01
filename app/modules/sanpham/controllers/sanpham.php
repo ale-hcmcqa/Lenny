@@ -1997,7 +1997,7 @@ class sanpham extends Controller
                                 $noidungdonhang=$noidungdonhang.'<tr class="item_or" >
                                   <td style="font-size:13px;border:1px solid #ccc;padding:5px;">'.$dem.'</td>
                                   <td style="text-align:left;font-size:13px;border:1px solid #ccc;padding:5px;"><b>'.$sanpham->ten.'</b></td>
-                                  <td class="lightbox" style="border:1px solid #ccc;padding:5px;"><img src="'.site_url().$sanpham->anh.'" width="200"/></td>
+								  <td class="lightbox" style="border:1px solid #ccc;padding:5px;"><img src="'.site_url().$sanpham->anh_thumb.'" width="200"/></td>
                                   <td style="text-align:right;border:1px solid #ccc;padding:5px;">';
                                   if($sanpham->giakm!=0)
                                   {

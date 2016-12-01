@@ -16,7 +16,7 @@ $slider=$CI->site_model->gettablename_all('tblslider','','','','');
                     foreach ($sqldanhmucsanphamtr->result() as $itemdanhmucsanphamtr) 
                     {
                     ?>
-                    <li><a href="<?php echo site_url(LocDau($itemdanhmucsanphamtr->danhmucsanpham).'-dm'.$itemdanhmucsanphamtr->id.'.html'); ?>" title="<?php echo $itemdanhmucsanphamtr->danhmucsanpham; ?>"><img alt="<?php echo $itemdanhmucsanphamtr->danhmucsanpham; ?>" title="<?php echo $itemdanhmucsanphamtr->danhmucsanpham; ?>" src="<?php echo $itemdanhmucsanphamtr->anh; ?>"><?php echo $itemdanhmucsanphamtr->danhmucsanpham; ?> <?php if($itemdanhmucsanphamtr->hot==1){ ?><img style="margin-left:15px;" title="<?php echo $itemdanhmucsanphamtr->danhmucsanpham; ?>" alt="<?php echo $itemdanhmucsanphamtr->danhmucsanpham; ?>" src="images/icon_hot.png"><?php } ?></a>
+                    <li><a href="<?php echo site_url(LocDau($itemdanhmucsanphamtr->danhmucsanpham).'-dm'.$itemdanhmucsanphamtr->id.'.html'); ?>" title="<?php echo $itemdanhmucsanphamtr->danhmucsanpham; ?>"><?php echo $itemdanhmucsanphamtr->danhmucsanpham; ?> <?php if($itemdanhmucsanphamtr->hot==1){ ?><img style="margin-left:15px;" title="<?php echo $itemdanhmucsanphamtr->danhmucsanpham; ?>" alt="<?php echo $itemdanhmucsanphamtr->danhmucsanpham; ?>" src="images/icon_hot.png"><?php } ?></a>
                         <?php 
                             $this->db->where('status',0);
                             $this->db->where('danhmucsanpham',$itemdanhmucsanphamtr->id);
