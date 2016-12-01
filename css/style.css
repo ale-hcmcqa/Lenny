@@ -472,12 +472,7 @@ body
     padding:6px 0;
     position: relative;
 }
-#danhmucleft ul li:last-child
-{
-    padding:6px 0;
-    position: relative;
-	margin-left:-30px;
-}
+
 #danhmucleft ul li a
 {
     display: block;    
@@ -499,7 +494,7 @@ body
 {
     position: absolute;
     display: none;
-    left:245px;
+    left:217px;
     padding-top:0 !important;
     z-index:2000;
     margin-left:0 !important;
